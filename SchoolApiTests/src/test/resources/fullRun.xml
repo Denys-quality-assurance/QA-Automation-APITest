@@ -1,0 +1,17 @@
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >
+<suite name="Sanity Suite" verbose="0" group-by-instances="true">
+    <listeners>
+<!--          <listener class-name="api_testing.listeners.RetryListener"/> -->
+<!--         <listener class-name="api_testing.listeners.TestListener"/> -->
+    </listeners>
+    <test name="Sanity" verbose="1" group-by-instances="true">
+        <groups>
+            <run>
+                <exclude name="disabled"/>
+            </run>
+        </groups>
+        <packages>
+            <package name="api_testing.school_api_tests"/>
+        </packages>
+    </test>
+</suite>
